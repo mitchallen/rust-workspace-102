@@ -24,9 +24,9 @@ ls -ls
 cd rust-workspace-102
 ```
 
-**TODO**
+#### Root src
 
-* TODO - probably removed the root src folder (rm -rf src)
+* Depending on the structure of your monorepo, it may or may not make sense to remove the root src folder.
 
 ### Workspace
 
