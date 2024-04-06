@@ -62,7 +62,7 @@ members = [
 
 ### Create workspaces
 
-* Create workspace so git 
+* Create workspaces
 * Using `--vcs none` so a git repo isn't created just for the child workspace
 
 #### blog_api (binary)
