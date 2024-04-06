@@ -1,14 +1,31 @@
 rust-workspace-102
 ==
 
+## Usage
+
+```sh
+make
+```
+
+```sh
+PROJECT=blog_api make run
+```
+
+```sh
+PROJECT=blog_web make run
+```
+
+```sh
+make clean
+```
+
 ## References
 
+* [rust-workspace-101](https://github.com/mitchallen/rust-workspace-101)
 * [Structuring larger Rust projects with Cargo Workspaces](https://youtu.be/S3c7NRS698A?si=7Gsx181KzqJqrFwe) - **Let's Get Rusty ** (YouTube)
 * [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) - VS Code extension for syntax highlighting
 
-## Usage
 
-TODO
 
 * * *
 
