@@ -13,7 +13,3 @@ version = "0.1.0"
 [[package]]
 name = "blog_web"
 version = "0.1.0"
-
-[[package]]
-name = "rust-workspace-102"
-version = "0.1.0"

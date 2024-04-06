@@ -27,10 +27,26 @@ cd rust-workspace-102
 #### Root src
 
 * Depending on the structure of your monorepo, it may or may not make sense to remove the root src folder.
+* If there is no root src then the root Cargo.toml is referred to as a "virtual manifest"
+* Otherwise the whole thing is a "package"
+* Since we don't want to build a package, remove the root src folder and edit the Cargo.toml file (see below)
+
+### Removed root src
+
+```sh
+rm -rf src
+```
 
 ### Workspace
 
+* Replace the contents of the root Cargo.toml with the workspace / members definition.
+
 ```toml
+# [package]
+# name = "rust-workspace-102"
+# version = "0.1.0"
+# edition = "2021"
+
 [workspace]
 
 members = [
@@ -38,6 +54,10 @@ members = [
     "blog_web",
     "blog_shared"
 ]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# [dependencies]
 ```
 
 ### Create workspaces
@@ -71,7 +91,7 @@ cargo new --vcs none --lib blog_shared
 * Can probably remove root src/main.rs
 
 ```sh
-% tree -I "target"                      
+% tree      
 .
 ├── Cargo.lock
 ├── Cargo.toml
@@ -84,10 +104,17 @@ cargo new --vcs none --lib blog_shared
 │   ├── Cargo.toml
 │   └── src
 │       └── lib.rs
-├── blog_web
-│   ├── Cargo.toml
-│   └── src
-│       └── main.rs
-└── src
-    └── main.rs
+└── blog_web
+    ├── Cargo.toml
+    └── src
+        └── main.rs
 ```
+
+## Cargo build
+
+```sh
+cargo build
+```
+
+Each target will be created.
+
