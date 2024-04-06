@@ -118,3 +118,10 @@ cargo build
 
 Each target will be created.
 
+## Target specific packages
+
+You can target an individual package with the `-p` flag:
+
+```sh
+cargo build -p blog_api
+```
