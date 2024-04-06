@@ -10,15 +10,32 @@ rust-workspace-102
 
 TODO
 
+* * *
+
 ## Notes
 
-* Setup (differs from referenced video)
+### Setup 
+
+* Differs from referenced video:
 
 ```sh
 cargo new rust-workspace-102
 ls -ls
 cd rust-workspace-102
 ```
+
+### Workspace
+
+```toml
+[workspace]
+
+members = [
+    "blog_api",
+    "blog_web",
+    "blog_shared"
+]
+```
+
 
 
 
