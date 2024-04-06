@@ -88,16 +88,14 @@ members = [
 ```sh
 cargo new --vcs none blog_api
 ```
-
 * Ignore complaints about other workspace missing - will add soon
-
-```
 
 #### blog_web (binary)
 
 ```sh
 cargo new --vcs none blog_web
 ```
+
 #### blog_shared (lib)
 
 ```sh
