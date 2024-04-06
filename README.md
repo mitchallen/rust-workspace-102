@@ -24,6 +24,10 @@ ls -ls
 cd rust-workspace-102
 ```
 
+**TODO**
+
+* TODO - probably removed the root src folder (rm -rf src)
+
 ### Workspace
 
 ```toml
@@ -36,7 +40,54 @@ members = [
 ]
 ```
 
+### Create workspaces
 
+* Create workspace so git 
+* Using `--vcs none` so a git repo isn't created just for the child workspace
 
+#### blog_api (binary)
 
+```sh
+cargo new --vcs none blog_api
+```
 
+* Ignore complaints about other workspace missing - will add soon
+
+```
+
+#### blog_web (binary)
+
+```sh
+cargo new --vcs none blog_web
+```
+#### blog_shared (lib)
+
+```sh
+cargo new --vcs none --lib blog_shared
+```
+
+### Tree View
+
+* Can probably remove root src/main.rs
+
+```sh
+% tree -I "target"                      
+.
+├── Cargo.lock
+├── Cargo.toml
+├── README.md
+├── blog_api
+│   ├── Cargo.toml
+│   └── src
+│       └── main.rs
+├── blog_shared
+│   ├── Cargo.toml
+│   └── src
+│       └── lib.rs
+├── blog_web
+│   ├── Cargo.toml
+│   └── src
+│       └── main.rs
+└── src
+    └── main.rs
+```
