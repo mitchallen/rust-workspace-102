@@ -104,7 +104,7 @@ cargo new --vcs none --lib blog_shared
 
 ### Tree View
 
-* Can probably remove root src/main.rs
+* Remove root src/main.rs
 
 ```sh
 % tree      
