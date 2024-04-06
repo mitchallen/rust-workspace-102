@@ -21,6 +21,7 @@ make clean
 
 ## References
 
+* [Cargo Workspaces](https://doc.rust-lang.org/book/ch14-03-cargo-workspaces.html)
 * [rust-workspace-101](https://github.com/mitchallen/rust-workspace-101)
 * [Structuring larger Rust projects with Cargo Workspaces](https://youtu.be/S3c7NRS698A?si=7Gsx181KzqJqrFwe) - **Let's Get Rusty ** (YouTube)
 * [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) - VS Code extension for syntax highlighting
